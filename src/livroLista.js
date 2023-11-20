@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ControleLivro } from '../src/controle/controleLivros';
 import { ControleEditora } from '../src/controle/controleEditoras';
+import { Button } from 'react-bootstrap';
+
 
 const LinhaLivro = ({ livro, excluir }) => {
   const controleEditora = new ControleEditora();
