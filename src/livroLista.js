@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ControleLivro } from '../src/controle/controleLivros';
 import { ControleEditora } from '../src/controle/controleEditoras';
 import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const LinhaLivro = ({ livro, excluir }) => {
@@ -15,7 +16,9 @@ const LinhaLivro = ({ livro, excluir }) => {
   return (
     <tr>
       <td>
-        <button onClick={handleExcluir}>Excluir</button>
+        <Button variant="danger" onClick={handleExcluir}>
+          Excluir
+        </Button>
       </td>
       <td>{livro.codigo}</td>
       <td>{livro.codEditora}</td>
@@ -56,7 +59,7 @@ const LivroLista = () => {
   };
 
   return (
-    <main>
+    <main style={{ backgroundColor: 'black', color: 'white' }}>
       <h1>Lista de Livros</h1>
       <table>
         <thead>
