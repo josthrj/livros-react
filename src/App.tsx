@@ -6,7 +6,7 @@ function App() {
  return (
     <div className="container">
       <div className="row">
-        <div className="col-md-6 offset-md-3">
+      <div className="col-md-12 ">
           <h1 className="text-center">Catálogo de Livros</h1>
           <LivroLista />
         </div>
