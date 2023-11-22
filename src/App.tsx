@@ -1,6 +1,8 @@
 import React from 'react';
-import LivroLista from './livroLista.js'; // Asegúrate de que la ruta sea correcta según tu estructura de carpetas
+import LivroLista from './livroLista.js';
+import LivroDados from './livroDados.js'; // Asegúrate de que la ruta sea correcta según tu estructura de carpetas
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, NavLink, Outlet } from 'react-router-dom';
 
 function App() {
  return (
